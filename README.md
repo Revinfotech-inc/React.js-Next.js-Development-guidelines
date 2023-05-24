@@ -32,7 +32,37 @@ Here are some best practices to follow when developing with React and Next.js:
 10. **Proper File and Component Naming**
     - Use meaningful names for files and components to enhance code readability and maintainability. For example, prefer `index.js` over `app.js` to convey the file's purpose.
 
-11. **Use SonarLint VS Code Extension**
+11. **Component Organization**
+    - Organize your components into a logical folder structure based on their functionality or features. This makes it easier to navigate and maintain your codebase.
+
+12. **Functional Components**
+    - Prefer functional components over class components unless you need to utilize component lifecycle methods or local component state. Functional components are simpler and easier to understand.
+
+13. **Use React Hooks**
+    - Utilize React hooks such as useState, useEffect, and useContext to manage state, handle side effects, and share data between components. Hooks provide a more concise and functional approach to React development.
+
+14. **Component Reusability**
+    - Design components to be reusable by extracting common functionality into separate components. This promotes code reuse and reduces duplication.
+
+15. **Immutability**
+    - Follow immutability principles by using immutability libraries (e.g., Immutable.js) or the spread operator to create new copies of objects and arrays when updating state. This prevents unintended side effects and enhances predictability.
+
+16. **Code Splitting**
+    - Implement code splitting to split your React application into smaller chunks. This improves initial loading time and allows for better performance, especially for larger applications.
+
+17. **Error Boundaries**
+    - Wrap components with error boundaries to catch and handle JavaScript errors that occur within their subtree. This prevents the entire application from crashing and provides a better user experience.
+
+18. **Performance Optimization**
+    - Optimize performance by using React.memo for memoization of functional components and useCallback/useMemo for memoizing function references and computed values. Additionally, use tools like React DevTools Profiler to identify and optimize performance bottlenecks.
+
+19. **Linting and Formatting**
+    - Use linters like ESLint and style formatters like Prettier to enforce code style consistency and catch potential issues early on. Configure your development environment to automatically format code on save.
+
+20. **Documentation and Comments**
+    - Document your code, especially complex components and functions, to provide clarity and guidance for other developers who may work on the project. Use comments sparingly to explain non-obvious code logic or to provide context.
+
+21. **Use SonarLint VS Code Extension**
     - Install and utilize the SonarLint extension for Visual Studio Code.
     - SonarLint provides real-time feedback, highlighting potential code issues as you type.
     - It generates comprehensive reports that prioritize and describe detected issues.
